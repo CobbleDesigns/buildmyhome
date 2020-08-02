@@ -1,0 +1,13 @@
+.offer-back{
+    background-color: rgb(206, 121, 61);
+    padding: 5%;
+}
+.offer-heading{
+    padding: 5vh 0;
+}
+.cards-image{
+    padding: 2vh;
+}
+.offer-back>.container>.row>.col{
+    padding: 10vh 3vh;
+}

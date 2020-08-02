@@ -1,0 +1,11 @@
+.wh-back{
+    background-color: #fff4d9;
+    padding: 5vh 0;
+}
+.wh-back> .container> .row>.col> .card{
+    background-color: #fff4d900 !important;
+    border: .8px solid #de5600;
+}
+.wh-back> .container> .row>.col> .card> img{
+    padding: 5vh;
+}

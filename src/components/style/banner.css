@@ -1,0 +1,40 @@
+.hero{
+    background-image: linear-gradient(180deg, rgba(195,117,68,1) 0%, rgba(235,124,18,0) 0%, rgba(190,94,32,0.29379084397430844) 72%, rgba(180,100,43,1) 97%, rgba(195,117,68,1) 100%), url('/images/landing_img_1.png');
+    height: 100vh;
+    background-color: rgba(17, 17, 17, 0.31);
+    background-size: cover;
+}
+.hero > .container{
+    padding: 35vh 0;
+}
+.hero > .container > h1{
+    font-weight: .7rem;
+    text-shadow: 1px 1px rgba(17, 17, 17, 0.31);
+}
+.landing-btn-primary{
+    padding: 2vh 15vh;
+    border-radius: 3px;
+    background-color: #de5600;
+    transition: ease-in-out .3s;
+}
+.landing-btn-primary:hover{
+    background-color: #af4706;
+}
+.landing-btn-secondary{
+    padding: 1.8vh 19.8vh;
+    border-style: solid;
+    border-radius: 3px;
+    font-weight: 500;
+    border-width: 1.5px;
+    border-color: #ffffff;
+    text-shadow: 1px 1px rgba(17, 17, 17, 0.31);
+    transition: ease-in-out .3s;    
+}
+.landing-btn-secondary:hover{
+    background-color: #ffffff;
+    color: #de5600 !important;
+    text-shadow: none;
+}
+.hero>.container>.col-md-7>.row{
+    padding: 5vh;
+}

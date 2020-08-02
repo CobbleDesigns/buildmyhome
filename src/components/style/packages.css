@@ -1,0 +1,41 @@
+.packages-back{
+    background-color: #fff4d9;
+    padding: 10vh 0;
+}
+.packages-back>.container>.col-12>h1{
+    padding: 0 0 10vh;
+}
+.accordions>.col{
+    padding: 10vh 5vh;
+}
+.accordions > .col>.card>.card-title{
+    padding: 5vh 0 0;
+}
+.accordions>.col>.card>.card-body>.btn-orange{
+    background-color: #de5600;
+    transition: ease-in-out .2s;
+}
+.accordions>.col>.card>.card-body>.btn-orange:hover{
+    background-color: #b64d0c;
+}
+.accordion > .card > .card-header{
+    background-color: #fff !important;
+}
+.accordion > .card > .card-header:hover{
+    background-color: rgba(236, 233, 233, 0.644)!important;
+}
+
+.accordion > .card > .card-header:after{
+    content: '\002B';
+    align-content: right !important;
+    position: absolute;
+    width: 30px;
+    text-align: center;
+    border-radius: 4px;
+    right: 15px;
+    top: 11px;
+    background-color: #fff4d9;
+}
+.accordion > .card > .card-header:active{
+    content: '\2212' !important;
+}

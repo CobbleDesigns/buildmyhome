@@ -1,0 +1,14 @@
+.hiw-back{
+    background-color: #fff4d9;
+    padding: 15vh 0;
+}
+.hiw-back>.container>.col-12{
+    padding: 10vh 0 !important;
+}
+.hiw-back>.container>.row>.col> img{
+    height: 30vh;
+    width: 30vh;
+}
+.hiw-back > .container > .row > .col > h6{
+    padding: 5vh 3vh;
+}
