@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './style/why-hire.css';
-
+//dgkhdfslgkh
 class WhyHire extends Component {
     state = {  }
     render() { 
@@ -32,7 +32,7 @@ class WhyHire extends Component {
                             <div className='card'>
                                 <img src='/images/icons/quality-assuarance.svg' alt='' />
                                 <div className='card-title d-flex justify-content-center'>
-                                    <b>Quality & Discount Assuarance</b>
+                                    <b align='center'>Quality & Discount Assuarance</b>
                                 </div>
                                 <div className='card-body justify-content-center'>
                                     <p>

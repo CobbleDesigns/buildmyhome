@@ -1,10 +1,16 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { Modal } from 'react-bootstrap'; 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './style/banner.css'
+import './style/banner.css';
+import EnqForm from './EnqForm'; 
 
-class Banner extends Component {
+function Banner () {
 
-    render() { 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
         return ( 
             <section className='hero'>
                 <div className="container text-white">
@@ -14,16 +20,26 @@ class Banner extends Component {
                         Safety quality and time - that's what makes us work for you
                     </h5> <br />
                     <div className='col-md-7'>
-                        <div className='row'>
-                        <a href className='landing-btn-primary shadow-lg'>Request a call</a> &nbsp;
-                        <a href className='landing-btn-secondary'>Explore</a>
+                        <div className='row row-cols-1 row-cols-lg-2 row-cols-md-2'>
+                            <div className='col'>
+                                <a onClick={handleShow} className='landing-btn-primary btn-block shadow-lg'>Request a call</a>
+                                <Modal show={show} onHide={handleClose}>
+                                    <Modal.Header closeButton />
+                                    <Modal.Body>
+                                        <EnqForm />
+                                    </Modal.Body>
+                                </Modal>
+                            </div>
+                            <div className='col'>
+                                <a href='#offer' className='btn landing-btn-secondary btn-block'>Explore</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
          );
-    }
+    
 }
  
 export default Banner;

@@ -1,7 +1,28 @@
 #partners{
     padding: 15vh 0;
+    
 }
-#partners img{
-    max-height: 30vh;
-    width: 30vh;
+
+#partners> .carousel> .carousel-inner> .carousel-item{
+    padding: 0 10vh;
+    margin: 0 -100% 0 25%;
+}
+.carousel-indicators li{
+    background-color: #000 !important;
+}
+@media only screen and (max-width: 480px){
+    #partners> .carousel> .carousel-inner{
+        display: flex !important;
+        padding: 0 0 !important;
+    }
+    #partners> .carousel> .carousel-inner> .carousel-item{
+        padding: 0 10vh;
+        margin: 0 -100% 0 -16%;
+    }
+}
+@media only screen and (max-width: 380px){
+    #partners> .carousel> .carousel-inner> .carousel-item{
+        padding: 0 10vh;
+        margin: 0 -100% 0 -30% !important;
+    }
 }

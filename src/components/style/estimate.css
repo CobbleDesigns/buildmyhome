@@ -1,0 +1,40 @@
+.estimate-bg{
+    background: url(/images/estimate.png);
+    height: 60vh;
+}
+.estimate-bg>.container{
+    padding: 18vh;
+    text-shadow: 1px 1px rgba(17, 17, 17, 0.31);
+}
+.estimate-bg> .container> .col-md-4{
+    margin: 0 50vh;
+}
+.estimate-btn{
+    background-color: #de5600;
+    padding: 2vh 10vh;
+    color: #fff !important;
+    transition: ease-in-out .2s;
+}
+.estimate-btn:hover{
+    background-color: #532001;
+}
+@media only screen and (max-width: 500px){
+    .estimate-bg> .container> .col-12> h1{
+        font-size: 18px !important;
+    }
+    .estimate-bg{
+        height: 40vh;
+    }
+    .estimate-bg>.container{
+        padding: 14vh;
+    }
+    .estimate-btn{
+        background-color: #de5600;
+        padding: 2vh;
+        color: #fff !important;
+        transition: ease-in-out .2s;
+    }
+    .estimate-bg> .container> .col-md-4{
+        margin: 0 0;
+    }
+}

@@ -1,0 +1,16 @@
+#contact{
+    padding: 18vh 10vh;
+    background: url(/images/contact-background.svg);
+}
+
+.contact-card{
+    border-radius: 15px;
+    padding: 6vh !important;
+    background-color: #fff;
+    place-content: center;
+}
+@media only screen and (max-width: 500px){
+    #contact{
+        padding: 18vh 3vh;
+    }
+}

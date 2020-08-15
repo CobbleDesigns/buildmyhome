@@ -9,3 +9,9 @@
 .wh-back> .container> .row>.col> .card> img{
     padding: 5vh;
 }
+@media only screen and (max-width: 500px){
+
+    .wh-back> .container> .row>.col{
+        padding: 2vh 8vh !important;
+    }
+}

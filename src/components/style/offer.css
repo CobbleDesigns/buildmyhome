@@ -1,5 +1,5 @@
 .offer-back{
-    background-color: rgb(206, 121, 61);
+    background-color: rgba(195,117,68,1);
     padding: 5%;
 }
 .offer-heading{
@@ -10,4 +10,17 @@
 }
 .offer-back>.container>.row>.col{
     padding: 10vh 3vh;
+}
+@media only screen and (max-width: 500px){
+    .offer-back>.container>.row>.col{
+        padding: 3vh 12vh;
+    }
+    .offer-back> .container> .col-12> .offer-heading{
+        font-size: 28px !important;
+    }
+}
+@media only screen and (max-width: 380px){
+    .offer-back>.container>.row>.col{
+        padding: 3vh 6vh;
+    }
 }

@@ -1,9 +1,12 @@
 .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
+  #portfolio .gallery-main{
+    padding: 18vh 0;
+  }
   
   .portfolio #portfolio-flters {
-    padding: 0;
+    padding: 5vh 10vh;
     margin: 0 auto 20px auto;
     list-style: none;
     text-align: center;
@@ -21,11 +24,12 @@
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
     border-radius: 3px;
+    padding: 3vh 5vh;
   }
   
   .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
     color: #fff;
-    background: #3498db;
+    background: #de5600;
   }
   
   .portfolio #portfolio-flters li:last-child {

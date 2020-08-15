@@ -29,7 +29,7 @@ class Footer extends Component {
                         </div>
                     </div>
                     <div className="footer-copyright text-center py-3">
-                        All right reserved - 2020
+                        All rights reserved - 2020
                     </div>
                 </div>
             </div>

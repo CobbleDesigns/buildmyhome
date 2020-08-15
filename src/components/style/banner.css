@@ -5,15 +5,16 @@
     background-size: cover;
 }
 .hero > .container{
-    padding: 35vh 0;
+    padding: 30vh 0;
 }
 .hero > .container > h1{
     font-weight: .7rem;
     text-shadow: 1px 1px rgba(17, 17, 17, 0.31);
 }
 .landing-btn-primary{
-    padding: 2vh 15vh;
-    border-radius: 3px;
+    padding: 2vh 0;
+    border-radius: 10px;
+    text-align: center;
     background-color: #de5600;
     transition: ease-in-out .3s;
 }
@@ -21,9 +22,12 @@
     background-color: #af4706;
 }
 .landing-btn-secondary{
-    padding: 1.8vh 19.8vh;
+    padding: 1.8vh 0;
+    background-color: transparent;
+    color: #fff;
     border-style: solid;
-    border-radius: 3px;
+    text-align: center;
+    border-radius: 10px;
     font-weight: 500;
     border-width: 1.5px;
     border-color: #ffffff;
@@ -35,6 +39,6 @@
     color: #de5600 !important;
     text-shadow: none;
 }
-.hero>.container>.col-md-7>.row{
-    padding: 5vh;
+.hero>.container>.col-md-7>.row>.col{
+    padding: 1vh 1.5vh;
 }

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router'; 
-import { Navbar, Nav, NavDropdown, Container, Button, Modal } from 'react-bootstrap'; 
+import { Navbar, Nav, NavDropdown, Container, Modal } from 'react-bootstrap'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/nav.css';
+import EnqForm from './EnqForm'; 
  
-
+//skdjfh
 
 function NavBar() {
     
@@ -49,31 +49,24 @@ function NavBar() {
                    <Nav className='mr-auto'>
                    </Nav>
                    <Nav>
-                     <NavDropdown title="Pricing" id="collasible-nav-dropdown" className={links}>
-                       <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                       <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                       <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                     <NavDropdown title="Packages" id="collasible-nav-dropdown" className={links} style={{paddingRight: '5vh'}}>
+                       <NavDropdown.Item href="/#packages">Commercial</NavDropdown.Item>
+                       <NavDropdown.Item href="/kitchen">Kitchen</NavDropdown.Item>
+                       <NavDropdown.Item href="/wardrobe">Wardrobe</NavDropdown.Item>
+                       <NavDropdown.Item href="#action/3.4">Garden</NavDropdown.Item>
                      </NavDropdown>
-                     <Nav.Link className={links} href="#features">How it Works</Nav.Link>
-                     <Nav.Link className={links} href="/gallery">Gallery</Nav.Link>
-                     <Nav.Link className={links} href="#deets">Contact Us</Nav.Link>
-                     <Nav.Link eventKey={2} href="/form">
+                     <Nav.Link className={links} href="/how-it-works" style={{paddingRight: '5vh'}}>How it Works</Nav.Link>
+                     <Nav.Link className={links} href="/gallery" style={{paddingRight: '5vh'}}>Gallery</Nav.Link>
+                     <Nav.Link className={links} href="/contact-us" style={{paddingRight: '15vh'}}>Contact Us</Nav.Link>
+                     <Nav.Link eventKey={2} href="#">
                        <a href onClick={handleShow} className='nav-orange'>
                          Get Quote
                           </a>
                        <Modal show={show} onHide={handleClose}>
-                         <Modal.Header closeButton>
-                           <Modal.Title>Modal heading</Modal.Title>
-                         </Modal.Header>
-                         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                         <Modal.Footer>
-                           <Button variant="secondary" onClick={handleClose}>
-                             Close
-                            </Button>
-                           <Button  onClick={handleClose}>
-                             Save Changes
-                            </Button>
-                         </Modal.Footer>
+                         <Modal.Header closeButton />
+                         <Modal.Body>
+                            <EnqForm />
+                         </Modal.Body>
                        </Modal>
                      </Nav.Link>
                    </Nav>

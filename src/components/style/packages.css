@@ -3,16 +3,25 @@
     padding: 10vh 0;
 }
 .packages-back>.container>.col-12>h1{
-    padding: 0 0 10vh;
+    padding: 0;
 }
 .accordions>.col{
     padding: 10vh 5vh;
+}
+@media only screen and (max-width: 480px){
+    .accordions>.col{
+        padding: 5vh 5vh;
+    }
+    .packages-back>.container>.col-12>h1{
+        font-size: 28px;
+    }
 }
 .accordions > .col>.card>.card-title{
     padding: 5vh 0 0;
 }
 .accordions>.col>.card>.card-body>.btn-orange{
     background-color: #de5600;
+    border-radius: 10px;
     transition: ease-in-out .2s;
 }
 .accordions>.col>.card>.card-body>.btn-orange:hover{
@@ -36,6 +45,6 @@
     top: 11px;
     background-color: #fff4d9;
 }
-.accordion > .card > .card-header:active{
+.accordion > .card > .card-header:after .collapse.show{
     content: '\2212' !important;
 }

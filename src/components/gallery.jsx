@@ -1,31 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/gallery-main.css';
 
-class GalleryMain extends Component {
-    state = {  }
-    render() { 
+function GalleryMain() {
+
+
         return ( 
             <section id="portfolio" className="portfolio">
-            <div className="container">
+            <div className="container gallery-main">
       
-              <div className="section-title" data-aos="fade-up">
-                <h2>Portfolio</h2>
-                <p>Some pictures showing our tools and work</p>
-              </div>
-      
-              <div className="row" data-aos="fade-up" data-aos-delay="200">
+              <div className="row" >
                 <div className="col-lg-12 d-flex justify-content-center">
                   <ul id="portfolio-flters">
-                    <li data-filter="*" className="filter-active">All</li>
-                    <li data-filter=".filter-app">Tools</li>
-                    <li data-filter=".filter-card">Machines</li>
-                    <li data-filter=".filter-web">Works</li>
+                    <li data-filter="*" className="filter-active">All</li> &nbsp; 
+                    <li data-filter=".filter-app">Completed</li>&nbsp;
+                    <li data-filter=".filter-card">On Going</li>&nbsp;
+                    <li data-filter=".filter-web">Interiors</li>
                   </ul>
                 </div>
               </div>
       
-              <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+              <div className="row portfolio-container">
       
                 <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div className="portfolio-wrap">
@@ -145,9 +140,11 @@ class GalleryMain extends Component {
               </div>
       
             </div>
+            <script>
+            
+            </script>
           </section>
          );
     }
-}
  
 export default GalleryMain;

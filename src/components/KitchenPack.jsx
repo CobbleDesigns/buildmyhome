@@ -1,22 +1,23 @@
-import React, { useState } from 'react'; 
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './style/packages.css'
-import { Accordion, Card, Modal } from 'react-bootstrap';
+import React, { Component, useState } from 'react';
+import { Accordion, Card, Modal } from 'react-bootstrap'; 
 import EnqForm from './EnqForm'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/kitchen.css';  
 
-function Packages() {
+function KitchenPack () {
     
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    return ( 
-            <div className='packages-back'>
-                <div id='packages' className='container'>
+
+        return ( 
+            <div className='kitchen'>
+                <div className='container'>
                     <div className='col-12 d-flex justify-content-center'>
-                        <h1>Our Construction Packages</h1>
+                        <h1>Our Kitchen Packages</h1>
                     </div>
-                    <div className='row row-cols-1 row-cols-md-3 row-cols-sm-2 accordions'>
+                    <div className='row row-cols-1 row-cols-md-3 row-cols-sm-2'>
                         <div className='col col-sm'>
                             <div className='card shadow'>
                                 <div className='card-title d-flex justify-content-center'>
@@ -28,11 +29,11 @@ function Packages() {
                                     <a href className='btn btn-orange btn-block text-white' onClick={handleShow}>Get Quote</a>
                                 </div>
                             </div> 
-                            <Accordion className='shadow'>        
+                            <Accordion className='shadow'>            
                                 <div className='card'>
                                     <Accordion.Toggle as={Card.Header} eventKey="0">        
                                         Design and Drawing
-                                </Accordion.Toggle>
+                        </Accordion.Toggle>
                                     <Accordion.Collapse eventKey="0">            
                                         <div className='card-body'>
                                             <ul>
@@ -43,123 +44,123 @@ function Packages() {
                                         </div>
                                     </Accordion.Collapse>
                                 </div>
-                            <Card  className='border-bottom back-white'>                                    
-                            <Accordion.Toggle as={Card.Header} eventKey="1">    
-                                Structure                                                     
-                            </Accordion.Toggle>                                    
-                            <Accordion.Collapse eventKey="1">                                        
-                                    <Card.Body>
-                                        <ul>
-                                            <li>Steel: Gopala, Kamdhenu (Fe 500)</li>
-                                            <li>Aggregates: 20mm &amp; 40mm</li>
-                                            <li>Blocks: 6 inch for Exterior Wall &amp; 4 inch for Interior Wall</li>
-                                            <li>Cement: Ramco or Zuari, Birla of Grade 43 &amp; 53</li>
-                                            <li>M Sand: Blockwork &amp; P Sand: Plastering</li>
-                                            <li>RCC Design Mix: M25</li>
-                                            <li>Waterproofing: Dr.Fixit</li>
-                                            <li>Ceiling Height: 10 Feet</li>
-                                        </ul>
-                                    </Card.Body>
-                            </Accordion.Collapse>
-                            </Card>
-                            <Card className='border-bottom back-white'>    
-                            <Accordion.Toggle as={Card.Header} eventKey="2">    
-                               Doors & Windows                                                     
-                            </Accordion.Toggle>                                    
-                            <Accordion.Collapse eventKey="2">                                        
-                                    <Card.Body>
-                                    <ul>
-                                    <li>Main Door: Ready Made Door With Sal Wood Frame of 5 Inch by 3 Inch, 38mm Thickness</li>
-                                    <li>Internal Door: Flush Door With Laminates Along With Sal Wood Frame of 4 Inch by 3 Inch</li>
-                                    <li>Windows: Aluminium 2 Track</li>
-                                    </ul>
-                                    </Card.Body>
-                            </Accordion.Collapse>
-                            </Card>
-                            <Card className='border-bottom back-white'>    
-                            <Accordion.Toggle as={Card.Header} eventKey="3">    
-                                Painting                                                    
-                            </Accordion.Toggle>                                    
-                            <Accordion.Collapse eventKey="3">                                        
-                                    <Card.Body>
-                                    <ul>
-                                    <li>Interior: Birla Putty With Tractor Emulsion</li>
-                                    <li>Exterior: Asian Primer With Ace Emulsion</li>
-                                    </ul>
-                                    </Card.Body>
-                            </Accordion.Collapse>
-                            </Card>
-                            <Card className='border-bottom back-white'>                                    
-                            <Accordion.Toggle as={Card.Header} eventKey="4">    
-                                Flooring                                                     
-                            </Accordion.Toggle>                                    
-                            <Accordion.Collapse eventKey="4">                                        
-                                    <Card.Body>
-                                    <ul>
-                                    <li>Living &amp; Dining Flooring: Tiles Upto 50 Rs Per Sqft</li>
-                                    <li>Room &amp; Kitchen Flooring: Tiles Upto 50 Rs Per Sqft</li>
-                                    <li>Balcony &amp; Open Area Flooring: Tiles Upto 40 Rs Per Sqft</li>
-                                    <li>Staircase Flooring: Sadarahalli Or Marbel Upto 50 Rs Per Sqft</li>
-                                    <li>Parking Tiles: Anti-skid Tiles Upto 40 Rs Per Sqft</li>
-                                    </ul>
-                                    </Card.Body>
-                            </Accordion.Collapse>
-                            </Card>
-                            <Card className='border-bottom back-white'>                                    
-                            <Accordion.Toggle as={Card.Header} eventKey="5">    
-                                Electricals                                                     
-                            </Accordion.Toggle>                                    
-                            <Accordion.Collapse eventKey="5">                                        
-                                    <Card.Body>
-                                    <ul>
-                                    <li>Wires – Finolex</li>
-                                    <li>Switches – Anchor Roma</li>
-                                    </ul>
-                                    </Card.Body>
-                            </Accordion.Collapse>
-                            </Card>
-                            <Card  className='border-bottom back-white'>                                    
-                            <Accordion.Toggle as={Card.Header} eventKey="6">    
-                                Other Inclusive's                                                     
-                            </Accordion.Toggle>                                    
-                            <Accordion.Collapse eventKey="6">                                        
-                                    <Card.Body>
-                                    <ul>
-                                    <li>Overhead Tank: 1000 ltrs Sintex</li>
-                                    <li>Underground Sump: 5000 Ltrs</li>
-                                    <li>MS Staircase Railing</li>
-                                    <li>Parapet Wall 3 Feet High</li>
-                                    <li>MS Basic Gate</li>
-                                    </ul>
-                                    </Card.Body>
-                            </Accordion.Collapse>
-                            </Card>
-                        <Card className='border-bottom back-white'>
-                            <Accordion.Toggle as={Card.Header} eventKey="7">
-                                Extra Charges
-                            </Accordion.Toggle>                                    
-                            <Accordion.Collapse eventKey="7">           
-                                    <Card.Body>
-                                    <ul>
-                                    <li>Compound Wall Construction: 1020 Per Rft (Now It’s Free Along with 3000 Square feet of Construction)</li>
-                                    <li>Carpentry Work For Wadrobes: 960 Per Sqft</li>
-                                    <li>KEB Connections &amp; Charges</li>
-                                    <li>Water Connections &amp; Charges</li>
-                                    <li>External Cladding As Per Market Rate</li>
-                                    <li>Extra Sumping Depth 10 Rps Per Litre</li>
-                                    <li>Elevation Work Extra</li>
-                                    </ul>
-                                    
+                                <Card className='border-bottom back-white'>                
+                                    <Accordion.Toggle as={Card.Header} eventKey="1">    
+                                        Structure                                                     
+                    </Accordion.Toggle>                                    
+                                    <Accordion.Collapse eventKey="1">                                          
+                                        <Card.Body>
+                                            <ul>
+                                                <li>Steel: Gopala, Kamdhenu (Fe 500)</li>
+                                                <li>Aggregates: 20mm &amp; 40mm</li>
+                                                <li>Blocks: 6 inch for Exterior Wall &amp; 4 inch for Interior Wall</li>
+                                                <li>Cement: Ramco or Zuari, Birla of Grade 43 &amp; 53</li>
+                                                <li>M Sand: Blockwork &amp; P Sand: Plastering</li>
+                                                <li>RCC Design Mix: M25</li>
+                                                <li>Waterproofing: Dr.Fixit</li>
+                                                <li>Ceiling Height: 10 Feet</li>
+                                            </ul>
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
-                            </Accordion>         
+                                <Card className='border-bottom back-white'>                   
+                                    <Accordion.Toggle as={Card.Header} eventKey="2">    
+                                        Doors & Windows                                                                    
+                    </Accordion.Toggle>                                    
+                                    <Accordion.Collapse eventKey="2">                    
+                                        <Card.Body>
+                                            <ul>
+                                                <li>Main Door: Ready Made Door With Sal Wood Frame of 5 Inch by 3 Inch, 38mm Thickness</li>
+                                                <li>Internal Door: Flush Door With Laminates Along With Sal Wood Frame of 4 Inch by 3 Inch</li>
+                                                <li>Windows: Aluminium 2 Track</li>
+                                            </ul>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card className='border-bottom back-white'>                  
+                                    <Accordion.Toggle as={Card.Header} eventKey="3">                    
+                                        Painting                       
+                    </Accordion.Toggle>                
+                                    <Accordion.Collapse eventKey="3">                                         
+                                        <Card.Body>
+                                            <ul>
+                                                <li>Interior: Birla Putty With Tractor Emulsion</li>
+                                                <li>Exterior: Asian Primer With Ace Emulsion</li>
+                                            </ul>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card className='border-bottom back-white'>                
+                                    <Accordion.Toggle as={Card.Header} eventKey="4">
+                                        Flooring  
+                    </Accordion.Toggle>                
+                                    <Accordion.Collapse eventKey="4">                    
+                                        <Card.Body>
+                                            <ul>
+                                                <li>Living &amp; Dining Flooring: Tiles Upto 50 Rs Per Sqft</li>
+                                                <li>Room &amp; Kitchen Flooring: Tiles Upto 50 Rs Per Sqft</li>
+                                                <li>Balcony &amp; Open Area Flooring: Tiles Upto 40 Rs Per Sqft</li>
+                                                <li>Staircase Flooring: Sadarahalli Or Marbel Upto 50 Rs Per Sqft</li>
+                                                <li>Parking Tiles: Anti-skid Tiles Upto 40 Rs Per Sqft</li>
+                                            </ul>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card className='border-bottom back-white'>                 
+                                    <Accordion.Toggle as={Card.Header} eventKey="5">    
+                                        Electricals                                                     
+                                    </Accordion.Toggle>                                    
+                                    <Accordion.Collapse eventKey="5">                    
+                                        <Card.Body>
+                                            <ul>
+                                                <li>Wires – Finolex</li>
+                                                <li>Switches – Anchor Roma</li>
+                                            </ul>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card className='border-bottom back-white'>                
+                                    <Accordion.Toggle as={Card.Header} eventKey="6">    
+                                        Other Inclusive's                                                     
+                                    </Accordion.Toggle>                                    
+                                    <Accordion.Collapse eventKey="6">                
+                                        <Card.Body>
+                                            <ul>
+                                                <li>Overhead Tank: 1000 ltrs Sintex</li>
+                                                <li>Underground Sump: 5000 Ltrs</li>
+                                                <li>MS Staircase Railing</li>
+                                                <li>Parapet Wall 3 Feet High</li>
+                                                <li>MS Basic Gate</li>
+                                            </ul>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card className='border-bottom back-white'>
+                                    <Accordion.Toggle as={Card.Header} eventKey="7">
+                                        Extra Charges
+                                    </Accordion.Toggle>         
+                                    <Accordion.Collapse eventKey="7">                
+                                        <Card.Body>
+                                            <ul>
+                                                <li>Compound Wall Construction: 1020 Per Rft (Now It’s Free Along with 3000 Square feet of Construction)</li>
+                                                <li>Carpentry Work For Wadrobes: 960 Per Sqft</li>
+                                                <li>KEB Connections &amp; Charges</li>
+                                                <li>Water Connections &amp; Charges</li>
+                                                <li>External Cladding As Per Market Rate</li>
+                                                <li>Extra Sumping Depth 10 Rps Per Litre</li>
+                                                <li>Elevation Work Extra</li>
+                                            </ul>                               
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
                         </div>
 
 
+
                         <div className='col col-sm'>
-                        <div className='card shadow'>
-                            <div className='card-title d-flex justify-content-center'>
+                            <div className='card shadow'>
+                                <div className='card-title d-flex justify-content-center'>
                                 <h5>
                                     <b>Standard Package</b>
                                 </h5> 
@@ -290,13 +291,13 @@ function Packages() {
                                 <li>External Cladding As Per Market Rate</li>
                                 <li>Extra Sumping Depth 10 Rps Per Litre</li>
                                 <li>Elevation Work Extra</li>
-                                </ul>
-                                
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                        </Accordion>         
+                                            </ul>                                
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>     
                         </div>
+
 
 
                         <div className='col col-sm'>
@@ -445,43 +446,20 @@ function Packages() {
                                 </Accordion.Collapse>
                             </Card>
                         </Accordion> 
+                        </div>
+                    
+                        
                     </div>
-                
-                
                 </div>
-            </div>
-            <Modal show={show} onHide={handleClose}>
-                         <Modal.Header closeButton />
-                         <Modal.Body>
-                            <EnqForm />
-                         </Modal.Body>
-                       </Modal>
-            </div>
-         );
-    
+                <Modal show={show} onHide={handleClose}>
+                    <Modal.Header closeButton />
+                    <Modal.Body>
+                        <EnqForm />
+                    </Modal.Body>
+                </Modal>
+            </div>            
+    );
 }
+
  
-export default Packages;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// https://www.youtube.com/watch?v=t5pJ-SYCZa0
+export default KitchenPack;

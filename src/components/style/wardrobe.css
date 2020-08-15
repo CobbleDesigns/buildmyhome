@@ -1,0 +1,31 @@
+.wardrobe{
+    padding: 18vh 0 10vh;
+}
+.wardrobe>.container>.col-12{
+    background: linear-gradient(90deg, rgba(255,255,255,0.444) 0%, rgba(255, 255, 255, 0.444) 46%, rgba(244,247,247,0.444) 100%), url(/images/wardrobe-section.jpg);
+    height: 50vh;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+.wardrobe>.container>.col-12> h1{
+    font-size: 45px;
+    padding: 18vh 0 8vh;
+    text-align: center;
+    color: #de5600;
+    text-shadow: 2px 2px #47474791;
+    font-weight: 600 !important;
+}
+
+.wardrobe>.container>.row>.col>.card{
+    padding-top: 5vh;
+}
+.wardrobe>.container>.row{
+    padding: 5vh 0 0;
+}
+@media only screen and (max-width: 500px){
+    .wardrobe>.container>.row>.col{
+        padding: 0 5vh 3vh;
+    }
+}
+
+

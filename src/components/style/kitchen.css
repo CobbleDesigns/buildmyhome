@@ -1,0 +1,29 @@
+.kitchen{
+    padding: 18vh 0 10vh;
+}
+.kitchen>.container>.col-12{
+    background: linear-gradient(90deg, rgba(255,255,255,0.4995040252429097) 0%, rgba(255,255,255,0.502305145691089) 46%, rgba(244,247,247,0.4995040252429097) 100%), url(/images/kitchen-section.jpg);
+    height: 50vh;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+.kitchen>.container>.col-12> h1{
+    font-size: 45px;
+    padding: 18vh 0 8vh;
+    text-align: center;
+    color: #de5600;
+    text-shadow: 2px 2px #47474791;
+    font-weight: 600 !important;
+}
+
+.kitchen>.container>.row>.col>.card{
+    padding-top: 5vh;
+}
+.kitchen>.container>.row{
+    padding: 5vh 0 0;
+}
+@media only screen and (max-width: 500px){
+    .kitchen>.container>.row>.col{
+        padding: 0 5vh 3vh;
+    }
+}
