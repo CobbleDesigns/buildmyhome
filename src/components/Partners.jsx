@@ -21,14 +21,14 @@ function Partners() {
                     <Carousel.Item>
                         <img
                             className="d-block justify-content-center"
-                            src="/images/partners/godrej.png"
+                            src="/images/Partners/godrej.png"
                             alt="First slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block d-flex justify-content-center"
-                            src="/images/partners/asian-paints.png"
+                            src="/images/Partners/asian-paints.png"
                             alt="Second slide"
                         />
       
@@ -36,21 +36,21 @@ function Partners() {
                     <Carousel.Item>
                         <img
                             className="d-block d-flex justify-content-center"
-                            src="/images/partners/legrand.png"
+                            src="/images/Partners/legrand.png"
                             alt="Third slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block d-flex justify-content-center"
-                            src="/images/partners/greenply.png"
+                            src="/images/Partners/greenply.png"
                             alt="Third slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block d-flex justify-content-center"
-                            src="/images/partners/jsw.png"
+                            src="/images/Partners/jsw.png"
                             alt="Third slide"
                         />
                     </Carousel.Item>
